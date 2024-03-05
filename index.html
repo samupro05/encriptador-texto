@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./imagenes/Logo.png" alt="logo de pagina">
+            <h1 class="titulo">Text Encryptor</h1>
+        </nav>
+    </header>
+    <main>
+        <section class="caja1">
+            <textarea name="" id="ingresa-text" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="info">
+                <h6><span class="aviso">!</span>Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="encriptar" onclick="btnEncriptar()"><span>Encriptar</span></button>
+                <button class="desencriptar" onclick="btnDesencriptar()"><span>Desencriptar</span></button>
+            </div>
+        </section>
+        <section class="caja2">
+            <textarea class="mensaje" cols="20" rows="10"></textarea>
+            <div>
+                <h3 class="msj-encriptado">Ningún mensaje fue encontrado</h3>
+                <h5 class="msj">Ingresa el texto que desees encriptar o desencriptar.</h5>
+                <button class="copiar" onclick="copiarTexto()"><span>Copiar</span></button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <span>Derechos de autor®. 2024</span>
+        <a href="https://github.com/samupro05"><img class="icongithub" src="./imagenes/signo-de-github.png" alt="icono de github" target="blank"></a>
+        <a href="https://www.linkedin.com/in/samuel-aguilar-040a63211/"><img class="iconlink" src="./imagenes/linkedin.png" alt="linkedin"></a>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
